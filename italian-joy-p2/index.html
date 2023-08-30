@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italian Joy - Katherine Roetzer</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+    <nav>
+        <div class="logo"></div>
+        <button id="menuToggle">MENU</button>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li class="divider">|</li>
+            <li><a href="menu.html">MENU</a></li>
+            <li class="divider">|</li>
+            <li><a href="#">RESERVATIONS</a></li>
+            <li class="divider">|</li>
+            <li><a href="#">REVIEWS</a></li>
+            <li class="divider">|</li>
+            <li><a href="#">ABOUT US</a></li>
+            <li class="divider">|</li>
+            <li><a href="#">THE BLOG</a></li>
+            <li class="divider">|</li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="social-links">
+        <a href="#" class="social yelp"></a>
+        <a href="#" class="social twitter"></a>
+        <a href="#" class="social fb"></a>
+    </div>
+    </nav>
+    <section class="cta">
+        <div class="cta-content">
+            <h2>HOT. FRESH.</h2>
+            <h1>NOW!</h1>
+            <h3>SAVE 10% ON YOUR<br>
+                LUNCH OR DINNER ENTREE!</h3>
+            <p>Savings in effect now - July 31, 2018</p>
+        </div>
+
+            <a href="menu.html">VIEW THE MENU</a>
+    </section>
+    <section class="info-block">
+        <div class="block">
+            <div class="blockimg block-1"></div>
+            <h4>THE FINEST INGREDIENTS</h4>
+            <p>Italian Joy Restaurant is a place that takes pride in the fresh ingredients that make up our tasty dishes.</p>
+        </div>
+        <div class="block"> 
+            <div class="blockimg block-2"></div>
+            <h4>THE QUICKEST DELIVERY</h4>
+            <p>Order online today and have hot, fresh delicious Italian food delivered right to your front door.</p>
+        </div>
+        <div class="block"> 
+            <div class="blockimg block-3"></div>
+            <h4>THE BEST MENU</h4>
+            <p>Our menu of pasta, pizza, and Italian cuisine handmade with love, from scratch, daily.</p>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="gridimg grid-img1"></div>
+        <div class="gridimg grid-img2"></div>
+        <div class="gridimg grid-img3"></div>
+        <div class="gridimg grid-img4"></div>
+        <div class="gridimg grid-img5"></div>
+        <div class="gridimg grid-img6"></div>
+        <div class="gridimg grid-img7"></div>
+        <div class="gridimg grid-img8"></div>
+    </section>
+</main>
+    <footer>
+        <div class="mailing-list">
+            <form>
+                <label>JOIN OUR MAILING LIST</label><br><br>
+                <input type="email" placeholder="EMAIL ADDRESS">
+                <input type="submit" value="SIGN UP">
+            </form>
+        </div>
+        <div class="info-rest">
+            <h4>ITALIAN JOY RESTURANT</h6>
+                <p>123 Nowhere Lane <br>
+                    Orlando, FL 32806</p>
+                <p><br>(407) 555-1234</p>
+                <a href="#">info@italianjoy.com</a>
+        </div>
+    </footer>
+    <script>
+        //target our Hamburger HTML element
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.querySelector(".menu");
+
+//add a click event handler
+menuToggle.addEventListener("click", function(){
+	
+	menu.classList.toggle("active");
+	
+});
+    </script>
+</body>
+
+</html>

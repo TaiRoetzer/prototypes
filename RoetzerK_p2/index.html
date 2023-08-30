@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oak Harbor Music Festival - Katherine Roetzer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo"></a>
+        <ul class="menu">
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Scholarships</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="cta">
+            <div class="cta-head">
+                <h2>2023</h2>
+                <h1>OAK HARBOR <br>
+                    MUSIC FESTIVAL
+                </h1>
+            </div>
+            <div class="cta-button">
+                <h3>GET YOUR TICKETS FOR<br> THIS YEAR'S SHOW!</h3>
+                <a href="#" class="button-2">ON SALE NOW</a>
+            </div>
+        </section>
+        <section class="card">
+            <div class="info">
+                <h2>MUSIC INSPIRES</h2>
+                <h3>September 1, 2, 3 2023<br><br>
+
+                    Downtown Oak Harbor, WA on SE Pioneer Way</h3>
+                <p>The festival is dedicated to producing a world-class, 3-day musical event that sparks joy while
+                    building a sense of community, that brings our island neighbors together while establishing lasting
+                    connections with visitors.<br><br>
+                    The festival aims to add vibrancy to downtown Oak Harbor while generating revenue for Whidbey Island
+                    business, and that provides equal-access music education opportunities with scholarships and
+                    instrument programs that encourage local young people to express themselves through music.</p>
+            </div>
+            <div class="music-inspires-img card-img"></div>
+        </section>
+        <section>
+            <h2 class="title">2023 LINE UP</h2>
+            <div id="line-up-slider">
+                <div class="slider-button" onclick="slideright()"><</div>
+                        <div id="slider-1" class="slider-card slider-1">Stage Revolution</div>
+                        <div id="slider-2" class="slider-card slider-2">velvet concord</div>
+                        <div id="slider-3" class="slider-card slider-3">afternoon daydream</div>
+                        <div id="slider-4" class="slider-card slider-4">turning jane</div>
+                        <div class="slider-button" onclick="slideleft()">></div>
+                </div>
+        </section>
+        <section class="card">
+            <div class="mission-img card-img"></div>
+            <div class="info">
+                <h2>OUR MISSION</h2>
+                <h3>Building Community One Note<br>
+                    at a Time</h3>
+                <p>For the past eleven years the Oak Harbor Music Festival has provided a weekend of free musical
+                    entertainment in the City of Oak Harbor, on beautiful Whidbey Island.<br><br>
+
+                    The festival has provided a total of over $60,000 in scholarships to dozens of Whidbey Island
+                    graduating seniors who plan to study music or build their performance skills in college.</p>
+                <a href="donate.html" class="button-1">Donate!</a>
+            </div>
+        </section>
+    </main>
+    <section class="sponsors">
+        <h2>2023 SPONSORS</h2>
+        <main>
+            <div class="sponsors-gallery">
+                <div class="gallery logo1"></div>
+                <div class="gallery logo2"></div>
+                <div class="gallery logo3"></div>
+                <div class="gallery logo4"></div>
+            </div>
+            <a href="#" class="button-1">Apply to support the show!</a>
+        </main>
+    </section>
+    <footer>
+        <main>
+            <div class="footer-info">
+                <ul class="links">
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">SPONSORS</a></li>
+                    <li><a href="#">MUSICIANS</a></li>
+                    <li><a href="donate.html">DONATE</a></li>
+                </ul>
+                <a href="index.html" class="logo"></a>
+                <ul class="social-links">
+                    <li><a href="#" class="insta social"></a></li>
+                    <li><a href="#" class="twr social"></a></li>
+                    <li><a href="#" class="fb social"></a></li>
+                </ul>
+            </div>
+        </main>
+        <p class="copy">Oak Harbor Music Festival &#169 2023</p>
+    </footer>
+    <script>
+        const baseClass = 'slider-card';
+        const sliderclasses = ['slider-1', 'slider-2', 'slider-3', 'slider-4','slider-5','slider-6','slider-7','slider-8'];
+        const slidertext = ['Stage Revolution', 'velvet concord', 'afternoon daydream', 'turning jane','Double Helix','Zombie Hoax','ghosttown','sour candy'];
+        const sliderelements = [
+            document.getElementById('slider-1'),
+            document.getElementById('slider-2'),
+            document.getElementById('slider-3'),
+            document.getElementById('slider-4'),
+        ];
+        const indexes = [0, 1, 2, 3];
+
+        function slideleft() {
+            
+            indexes.forEach((index, i) => {
+                indexes[i] = index + 1;
+
+                if (indexes[i] >= sliderclasses.length) {
+                    indexes[i] = 0;
+                }
+                sliderelements[i].className = 'slider-card' + ' ' + sliderclasses[indexes[i]];
+                sliderelements[i].innerHTML = slidertext[indexes[i]];
+            });                
+        }
+
+        function slideright() {
+
+            indexes.forEach((index, i) => {
+                indexes[i] = index - 1;
+
+                if (indexes[i] < 0) {
+                    indexes[i] = sliderclasses.length - 1;
+                }
+                sliderelements[i].className = 'slider-card' + ' ' + sliderclasses[indexes[i]];
+                sliderelements[i].innerHTML = slidertext[indexes[i]];
+            });
+        }
+    </script>
+</body>
+
+</html>

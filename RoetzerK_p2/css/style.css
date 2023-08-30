@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DFE4F0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+nav {
+    background-color: #6769A6;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.logo {
+    background-image: url("../images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 6rem;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 6%;
+}
+
+.menu li {
+    width: 15%;
+    list-style: none;
+    text-align: center;
+}
+
+.menu a {
+    color: #DFE4F0;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.menu a:hover {
+    color: #E3507D;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    text-shadow: .1rem .1rem .5rem #00000055;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cta {
+    background-image: url("../images/homecta.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 57rem;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.cta-head {
+    color: #DFE4F0;
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+}
+
+.cta h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
+
+.cta h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+    padding: 0;
+}
+
+.cta h3 {
+    padding-bottom: 6%;
+}
+
+.cta-button {
+    color: #DFE4F0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: right;
+    font-weight: 700;
+}
+
+.button-2 {
+    color: #E3507D;
+    border: solid 2px #E3507D;
+    border-radius: 2rem;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    line-height: 4rem;
+    transition: all 0.4s;
+}
+
+.button-2:hover {
+    background-color: #E3507D;
+    color: #000;
+    border: solid 2px #00000000;
+    letter-spacing: .1rem;
+}
+
+.card {
+    display: flex;
+    background-color: #F3F7FF;
+    border-radius: 1rem;
+    margin: 4% auto;
+}
+
+.info {
+    width: 50%;
+    padding: 4%;
+}
+
+h2 {
+    font-size: 3.438rem;
+    padding-bottom: 4%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.info h3 {
+    font-size: 2rem;
+    padding: 4% 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.info p {
+    padding: 4% 0 8% 0;
+}
+
+.card-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.music-inspires-img {
+    background-image: url("../images/guitarman.png");
+    border-radius: 0 1rem 1rem 0;
+}
+
+.mission-img {
+    background-image: url("../images/pianogirl.png");
+    border-radius: 1rem 0 0 1rem;
+}
+
+.button-1 {
+    background-color: #6769A6;
+    color: #F3F7FF;
+    border: 2px solid #00000000;
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: .75rem 1.75rem;
+    font-weight: 700;
+    filter: drop-shadow(4px 4px 8px #00000055);
+    transition: all 0.4s;
+}
+
+.button-1:hover {
+    color: #6769A6;
+    background-color: #F3F7FF;
+    border: 2px solid #6769A6;
+    letter-spacing: .1rem;
+}
+
+.sponsors {
+    text-align: center;
+    background-color: #fff;
+    padding: 2% 2% 4% 2%;
+}
+
+.sponsors-gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 4% 0;
+}
+
+.gallery {
+    width: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15rem;
+}
+
+.logo1 {
+    background-image: url("../images/company1.png");
+}
+
+.logo2 {
+    background-image: url("../images/company2.jpg");
+}
+
+.logo3 {
+    background-image: url("../images/company3.jpeg");
+}
+
+.logo4 {
+    background-image: url("../images/company4.jpg");
+}
+
+footer {
+    background: url("../images/Seamless-Pattern-Musical-Notes-Black.jpg");
+    background-size: contain;
+}
+
+footer::before {
+    background-color: #6769A655;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 6% 0 6%;
+}
+
+.footer-info .logo {
+    width: 50%;
+    height: 9.75rem;
+}
+
+.footer-info li {
+    list-style: none;
+}
+
+.footer-info ul {
+    width: 20%;
+}
+
+.links a {
+    text-decoration: none;
+    color: #DFE4F0;
+    font-weight: 700;
+    line-height: 3rem;
+    transition: all 0.2s;
+    text-shadow: .1rem .1rem .2rem #00000088;
+}
+
+.links a:hover {
+    color: #E3507D;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    text-shadow: .1rem .1rem .5rem #00000055;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.social-links li {
+    height: 2rem;
+    margin: 1rem 0;
+    width: 30%;
+}
+
+.social {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+
+.insta {
+    background-image: url("../images/insta.png");
+}
+
+.twr {
+    background-image: url("../images/twtr.png");
+}
+
+.fb {
+    background-image: url("../images/fb.png");
+}
+
+.copy {
+    font-size: .75rem;
+    text-align: center;
+    color: #F3F7FF;
+    padding: 1%;
+}
+
+.donate-cta {
+    background-image: url("../images/donate-cta.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 23.25rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.support-img {
+    background-image: url("../images/piano-singer.png");
+    border-radius: 0 1rem 1rem 0;
+}
+
+.sponsor-img {
+    background-image: url("../images/vendor-1.png");
+    border-radius: 1rem 0 0 1rem;
+}
+
+.volunteer-img {
+    background-image: url("../images/voulenteer.png");
+    border-radius: 0 1rem 1rem 0;
+}
+
+.help-img {
+    background-image: url("../images/music-lesson.png");
+    border-radius: 1rem 0 0 1rem;
+}
+
+#line-up-slider {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 2.5%;
+}
+
+.slider-card {
+    height: 25.25rem;
+    width: 22.5%;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: box-shadow 0.2s;
+    text-align: center;
+    color: #F3F7FF;
+    font-weight: 900;
+    text-shadow: 0 0 .25rem #000;
+    padding-top: 25%;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.slider-card:hover {
+    box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, 0.15);
+}
+
+.slider-1 {
+    background-image: url("../images/band1.jpg");
+}
+
+.slider-2 {
+    background-image: url("../images/band2.jpg");
+}
+
+.slider-3 {
+    background-image: url("../images/band3.jpg");
+}
+
+.slider-4 {
+    background-image: url("../images/band4.jpg");
+}
+
+.slider-5 {
+    background-image: url("../images/band5.jpg");
+}
+
+.slider-6 {
+    background-image: url("../images/band6.jpg");
+}
+
+.slider-7 {
+    background-image: url("../images/band7.jpg");
+}
+
+.slider-8 {
+    background-image: url("../images/band8.jpg");
+}
+
+.slider-button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
+    cursor: pointer;
+    color: #6769A6;
+    user-select: none;
+}
+
+.title {
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .menu {
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu li {
+        width: 33%;
+        font-size: 1.5rem;
+        padding: 2%;
+    }
+
+    .cta {
+        flex-wrap: wrap;
+        border-radius: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        border-radius: 0;
+        padding: 5%;
+        margin: 15% 0;
+    }
+
+    .info {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .info h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 20rem;
+        border-radius: 0;
+    }
+
+    .sponsors {
+        padding-bottom: 15%;
+    }
+
+    .sponsors-gallery {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .gallery {
+        width: 45%;
+    }
+
+    .button-1 {
+        margin-bottom: 10%;
+    }
+
+    footer {
+        padding: 10%;
+    }
+
+    .footer-info .logo {
+        display: none;
+    }
+
+    .copy {
+        padding-top: 15%;
+    }
+
+    #line-up-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-card {
+        width: 100%;
+        padding-top: 90%;
+        margin: 0 7%;
+    }
+
+    .slider-button {
+        writing-mode: vertical-lr;
+    }
+
+    .title {
+        padding-bottom: 15%;
+    }
+
+    .donate-cta {
+        border-radius: 0;
+    }
+
+}

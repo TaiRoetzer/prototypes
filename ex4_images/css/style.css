@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+    max-width: 1400px;
+}
+header {
+    display:flex;
+    background-color: darkmagenta;
+    padding: 2%;
+    font-family: 'Oswald', sans-serif;
+}
+.fruit {
+    background-image: url(../images/fruit.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    margin-left: 8%;
+}
+.ex {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: .25%;
+    justify-content: center;   
+}
+
+h3 {
+    font-weight: 300;
+}
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.01em;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 52px;
+}
+.startrek {
+    display: flex;
+    justify-content: center;
+}
+.startrekimg {
+    background-image: url(../images/startrek.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 53%;
+    height: 324px;
+    padding: 2%;
+
+}
+.startrek p {
+    width: 20%;
+    padding: 1% 2%; 
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.sunset {
+    background-image: url("../images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-left: 9.6%;
+}
+.sunset p {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: center;
+    width: 20%;
+    padding: 3% 5%;
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+.hero {
+    display: flex;
+    padding: 4% 0;
+}
+.hero div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ccc;
+    width: 25%;
+    height: 324px;
+}
+.hero1 {
+    background-image: url("../images/capAmerica.jpg");
+}
+.hero2 {
+    background-image: url("../images/ironMan.jpg");
+    margin-left: 16px;
+}
+.hero3 {
+    background-image: url("../images/spiderman.jpg");
+    margin-left: 16px;
+}
+.hero4 {
+    background-image: url("../images/hulk.jpg");
+    margin-left: 16px;
+}
+.piano {
+    display: flex;
+    padding: 2%;
+}
+.piano p {
+    width: 35%;
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+.piano-img {
+    background-image: url("../images/piano.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    padding: 1%;
+    margin: 0;
+}
+.right {
+    text-align: right;
+    width: 50%;
+}

@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #252422;
+}
+
+main {
+    max-width: 1440px;
+    display: block;
+}
+
+nav {
+    background-color: #fffcf2;
+    padding: 0 10%;
+    border-bottom: 4px solid #f5cb5c;
+}
+
+.menubtn {
+    display: none;
+}
+
+.smlogo {
+    display: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-nav li {
+    list-style: none;
+    width: 20%;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    background-image: url("../images/sns-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4rem;
+    width: 8rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #252422;
+    transition: all 0.2s;
+}
+
+.main-nav a:hover {
+    font-weight: bold;
+    color: #c9a238;
+}
+
+.cta {
+    background-image: url("../images/cta-img.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 50rem;
+    padding: 4%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.cta-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.cta-poster {
+    background-image: url("../images/Winnie-the-pooh-blood-and-honey-poster.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10em;
+    align-self: stretch;
+    margin: 0;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.cta-movie {
+    background-color: #252422;
+    margin: 0;
+    padding: 0 8rem 2rem 2rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.cta-movie h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fffcf2;
+    line-height: 3.5rem;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.cta-movie p {
+    color: #f5cb5c;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.cta-movie a {
+    color: #f5cb5c;
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+
+.cta .movie-times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#button-1 {
+    background-color: #f5cb5c;
+    color: #252422;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    border: 2px solid #00000000;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#button-1:hover {
+    background-color: #25242255;
+    color: #f5cb5c;
+    font-weight: 600;
+    border: 2px solid #f5cb5c;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0 5% 2%;
+}
+
+.welcome-txt {
+    width: 30%;
+    color: #fffcf2;
+    margin: 0 4% 0 1%;
+    font-size: 1.15rem;
+}
+
+.welcome-txt h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f5cb5c;
+    padding-bottom: 1rem;
+}
+
+.welcome-img {
+    background-image: url("../images/trees.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    margin: 0;
+    padding: 15rem 0;
+    border-radius: 1rem;
+}
+
+.showing {
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0) 70%, rgba(64, 61, 57, 1) 100%);
+}
+
+.showing h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f5cb5c;
+    line-height: 6rem;
+}
+
+.movie-cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5%;
+}
+
+.cardimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 23rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card1img {
+    background-image: url("../images/barbie-poster.jpg");
+}
+
+.card2img {
+    background-image: url("../images/children-of-the-cord-2023-poster.jpg");
+}
+
+.card3img {
+    background-image: url("../images/sisu-poster.jpg");
+}
+
+.card4img {
+    background-image: url("../images/inside-poster.jpg");
+}
+
+.card5img {
+    background-image: url("../images/pope-exorcist-poster.jpg");
+}
+
+.card {
+    width: 19%;
+    color: #fffcf2;
+    background-color: #403d39;
+    border-radius: 1rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card p {
+    line-height: 1.5rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.card a {
+    color: #fffcf2;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+
+.card .movie-times {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.movie-times li {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding-right: 2%;
+}
+
+#button-2 {
+    background-color: #f5cb5c;
+    color: #252422;
+    font-size: 1.25rem;
+    font-weight: 900;
+    align-self: flex-end;
+    text-align: center;
+    width: 100%;
+    padding: 2.5%;
+    border-radius: 0 0 1rem 1rem;
+    transition: all 0.2s;
+    border: 2px solid #00000000;
+}
+
+#button-2:hover {
+    background-color: #403d39;
+    color: #f5cb5c;
+    border: 2px solid #f5cb5c;
+}
+
+.winendine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 2% 5% 0;
+}
+
+.wine-img {
+    background-image: url("../images/menuimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    margin: 0;
+    padding: 15rem 0;
+    border-radius: 1rem;
+}
+
+.wine-info {
+    width: 60%;
+    color: #fffcf2;
+}
+
+.wine-info h2 {
+    font-family: 'Playfair Display', serif;
+    color: #f5cb5c;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 4rem;
+}
+
+.wine-info p {
+    padding-bottom: 6%;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/priscilla-du-preez-LxEsi17Au6U-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 15% 0;
+    margin-bottom: 5rem;
+}
+
+.community h3 {
+    font-family: 'Playfair Display', serif;
+    color: #fffcf2;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 4rem;
+    text-shadow: 1px 1px 2px #252422;
+    padding-bottom: .5%;
+    text-align: center;
+}
+
+footer {
+    background-color: #f5cb5c;
+    padding: 2.5rem 4rem 0 4rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    margin: 0;
+}
+
+.footer-info ul {
+    text-align: right;
+    margin: 0;
+}
+
+.footer-info li {
+    list-style: none;
+}
+
+.footer-info a {
+    color: #252422;
+}
+
+.footer-info .logo {
+    align-self: flex-end;
+    margin: 0;
+}
+
+.footer-info p {
+    margin: 0;
+    font-style: italic;
+}
+
+.copy {
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: .75rem;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    color: #f5cb5c;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 2.5%;
+}
+
+.feature {
+    display: flex;
+    background-color: #403D39;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.feature-poster {
+    background-image: url("../images/Winnie-the-pooh-blood-and-honey-poster.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30.9rem;
+    width: 25%;
+    border-radius: 1rem 0 0 1rem;
+    margin: 0;
+}
+
+.feature-info {
+    width: 75%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    color: #fffcf2;
+}
+
+.feature-info h2 {
+    font-size: 2rem;
+}
+
+.feature-info h3 {
+
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.genre {
+    font-weight: 300;
+    padding-bottom: 2.5%;
+}
+
+.feature-info p {
+    padding-bottom: 5%;
+}
+
+.feature-times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+}
+
+.feature-info a {
+    margin-right: 1.5%;
+    margin-left: 0;
+}
+
+.movie-card {
+    display: flex;
+    align-items: center;
+    background-color: #403D39;
+    border-radius: 1rem;
+    margin-bottom: 4%;
+}
+
+.card-poster {
+    height: 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15%;
+    margin: 0;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.moviecard-info {
+    margin: 0;
+    padding-left: 7.5%;
+    width: 75%;
+    color: #fffcf2;
+}
+
+.moviecard-info h3 {
+    font-weight: 300;
+}
+
+.moviecard-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5% 5% 10% 0;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0;
+}
+
+.moviecard-info li {
+    list-style: none;
+    margin: 0;
+}
+
+.moviecard-info a {
+    color: #fffcf2;
+    text-decoration: none;
+    margin: 0;
+}
+
+.moviecard-info a:hover {
+    text-decoration: underline;
+}
+
+.poster-1 {
+    background-image: url("../images/barbie-poster.jpg");
+}
+
+.poster-2 {
+    background-image: url("../images/children-of-the-cord-2023-poster.jpg");
+}
+
+.poster-3 {
+    background-image: url("../images/sisu-poster.jpg");
+}
+
+.poster-4 {
+    background-image: url("../images/inside-poster.jpg");
+}
+
+.poster-5 {
+    background-image: url("../images/pope-exorcist-poster.jpg");
+}
+
+.poster-6 {
+    background-image: url("../images/oppenheimer-poster.jpg");
+}
+
+
+@media screen and (max-width:768px) {
+
+    .cta {
+        justify-content: center;
+        padding-bottom: 8%;
+        height: 41rem;
+        background-position: center;
+        background-image: url("../images/textureimg.jpg");
+    }
+
+    .cta-info {
+        flex-direction: column;
+        box-shadow: 0 .5rem .5rem .25rem #00000088;
+        border-radius: 1rem;
+    }
+
+    .cta-poster {
+        height: 20rem;
+        background-size: cover;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .cta-movie {
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+        padding: 6%;
+        padding-bottom: 10%;
+    }
+
+    .cta-movie h1 {
+        font-size: 1.75rem;
+        line-height: normal;
+        padding-top: 0;
+    }
+
+    .cta-movie a {
+        padding-bottom: 1rem;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .welcome {
+        flex-direction: column-reverse;
+        padding: 15% 2%;
+    }
+
+    .welcome-txt {
+        width: 100%;
+        padding: 5% 2%;
+        background-color: #403d39;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .welcome-img {
+        width: 100%;
+        padding: 10rem;
+        border-radius: 1rem 1rem 0 0;
+        border-bottom: solid 2px #f5cb5c;
+    }
+
+    .showing {
+        margin: 2%;
+        background: linear-gradient(0deg, rgba(64, 61, 57, 0.9024203431372549) 0%, rgba(0, 0, 0, 0) 50%, rgba(64, 61, 57, 0.8996192226890756) 100%);
+    }
+
+    .showing h2 {
+        line-height: normal;
+        padding-top: 4%;
+    }
+
+    .movie-cards {
+        flex-wrap: wrap;
+        padding: 6%;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: 0 .5rem .5rem .25rem #00000055;
+    }
+
+    .winendine {
+        flex-direction: column;
+        padding: 2%;
+        margin: 15% 0;
+    }
+
+    .wine-img {
+        width: 100%;
+        padding: 10rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .wine-info {
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+        padding: 5% 2% 10% 2%;
+        background-color: #403d39;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .wine-info h2 {
+        line-height: normal;
+        padding-bottom: 4%;
+    }
+
+    .wine-info p {
+        padding-bottom: 10%;
+    }
+
+    .community {
+        margin: 0 2% 15% 2%;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+        padding: 15% 0;
+    }
+
+    .footer-info ul {
+        text-align: center;
+    }
+
+    .copy {
+        padding-bottom: 15%;
+    }
+
+    .feature {
+        flex-direction: column;
+        margin: 0 2%;
+    }
+
+    .feature-poster {
+        width: 100%;
+        background-size: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .feature-info {
+        width: 100%;
+        padding: 6%;
+    }
+
+    .title {
+        padding: 7.5% 0;
+        font-size: 1.75rem;
+    }
+
+    .movie-card {
+        margin: 6% 2%;
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .card-poster {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .moviecard-info {
+        width: 100%;
+        padding: 6%;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #f5cb5c;
+    }
+
+    .main-nav li {
+        width: 100%;
+        font-size: 1.25rem;
+        color: #403d39;
+        line-height: 2rem;
+    }
+
+    ul.main-nav.active {
+        display: flex;
+    }
+
+
+    #smnav {
+        display: flex;
+        padding: 2% 8%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .smlogo {
+        margin: 0;
+        display: block;
+        background-image: url("../images/sns-logo.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 4rem;
+        width: 8rem;
+    }
+
+    button {
+        background-image: url(../images/menuicon.png);
+        width: 24px;
+        height: 16px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #fffcf2;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .menubtn {
+        display: block;
+    }
+
+    .smfootlogo {
+        display: block;
+        background-image: url("../images/sns-logo.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 4rem;
+        width: 8rem;
+    }
+
+
+}
